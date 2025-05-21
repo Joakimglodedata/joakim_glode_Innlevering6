@@ -68,6 +68,9 @@ button:hover {
   width: 20%;
 }
 
+.margin10 {
+  margin: 10px;
+}
 
 /*Body*/
 .buttonContainer {
