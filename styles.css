@@ -1,6 +1,6 @@
 /* Global variables  */
 :root {
-  --prim-clr: #b92bab;
+  --prim-clr: #d433c4;
   --sec-clr: #7b22af;
   --tert-clr: hsl(from var(--prim-clr) h s calc(l - 10));
   --back-clr: #1d101c;
@@ -33,7 +33,7 @@ p {
 button {
   transition: 1s;
   background: var(--sec-clr);
-  color: hsl(from var(--sec-clr) calc(h + 180) s calc(l + 5));
+  color: rgb(24, 24, 24);
 }
 
 button:hover {
@@ -53,12 +53,31 @@ button:hover {
   justify-content: center;
 }
 
+.flexCenterColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .halfWidth {
   width: 50%;
 }
 
 .fifthWidth {
   width: 20%;
+}
+
+
+/*Body*/
+.buttonContainer {
+  display: grid;
+  grid-template: repeat(4,auto) / repeat(5,auto);
+  gap: 15px 30px;
+}
+
+.buttonContainer button {
+  padding: 5px;
 }
 
 /*Footer*/
